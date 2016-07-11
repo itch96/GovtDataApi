@@ -45,6 +45,7 @@ var main = function() {
 	api += sort;
 	// sending the json request and accessing the callback via the data variable
 	$.getJSON(api, function(data){
+		i = 0;
 		while(i < data.records.length){
 			// in html, there is a <p> with class of 'info'.
 			// printing out all the fields and field values.
